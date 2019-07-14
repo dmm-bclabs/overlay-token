@@ -3,17 +3,39 @@ Overlay Token: A cross-chain token protocol for simple, better user experiences 
 
 ## Overview
 
-![Overlay Token Overview](docs/OverlayToken.svg)
+Overlay token aims to realize simple, better user experiences around exchanging some token or assets between different blockchain.
+It does not move existing assets into another blockchain, but creates the new assets
+that provide well-designed data structures and user-friendly functions for asset exchange on the multi blockchain enviroments.
 
+<p align="center"><img src="docs/OverlayToken.svg" width="70%" alt="overlay token overview"></p>
 
-![Application Example](docs/ETHLock.svg)
+- Overlay token shares the `Total Supply` between two or more different blockchains.
+- `Total Supply` is separated into the `Local Supply` of each blockchain.
+- Each accounts on each chains can transfer the token in the scope of the `Local Supply` on the chain like a normal ERC20 token.
+- `Local Supply` can be sent to another chain in the scope of the `Total Supply`.
 
+<p align="center"><img src="docs/ETHLock.svg" width="70%" alt="application example"></p>
+
+- This is an example usecase of overlay token.
+- You can create an overlay token between the Ethereum and three private chain.
+- You can mint the token on the Ethereum network with collateral of some ETH.
+- ETH-Locked overlay token can be used on any private chain with low transaction fee and low latency.
+- You can exchange the token to ETH at anytime by moving the token into Ethereum chain.
 
 ## Demo movies
 
 [![OverlayTokenDemo](http://img.youtube.com/vi/P4w2f_tFXpE/0.jpg)](http://www.youtube.com/watch?v=P4w2f_tFXpE "OverlayTokenDemo")
 
+- The first demo is built on two different private chains made with substrate.
+- When the left chain mints or burns some token, the `Total Supply` of the right chain is synchronized.
+- When one chain sends some token to another chain, the amounts of `Local Supply` of left and right chains are updated at consistency.
+
+
 [![OverlayTokenRopstenDemo](http://img.youtube.com/vi/P4w2f_tFXpE/0.jpg)](http://www.youtube.com/watch?v=P4w2f_tFXpE "OverlayTokenRopstenDemo")
+
+- The second demo is built on Ethereum (Ropsten) and substrate private chain.
+- Mint transaction on the Ethereum needs some transaction fee and high latency (30~ sec)
+- Transfer transaction on the private chain needs no transaction fee and low latency (~2 sec)
 
 ## Repositories
 
@@ -34,7 +56,9 @@ Overlay Token: A cross-chain token protocol for simple, better user experiences 
 
 ### Substrate <-> Substrate
 
-![Demo 1 Architecture](docs/BridgeArchitecture.svg)
+<p align="center"><img src="docs/BridgeArchitecture.svg" width="70%" alt="Demo 1 Architecture"></p>
+
+- You have to start 5 applications: 1) Parent Chain, 2) Child Chain, 3) Bridge, 4) Parent Web UI, 5) Child Web UI
 
 #### Start Parent Chain
 
@@ -88,7 +112,11 @@ $ PORT=8001 yarn run dev
 
 ### Ethereum <-> Substrate
 
-![Demo 2 Architecture](docs/BridgeArchitectureRopsten.svg)
+<p align="center"><img src="docs/BridgeArchitectureRopsten.svg" width="70%" alt="Demo 2 Architecture"></p>
+
+- You have to start 41) Substrate Chain, 2) Bridge, 4) Ethereum Web UI, 5) Substrate Web UI.
+- Also overlay token is need to be deployed on the Ethereum testnet.
+
 
 #### Start Substrate Chain
 
