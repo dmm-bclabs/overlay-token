@@ -31,7 +31,7 @@ that provide well-designed data structures and user-friendly functions for asset
 - When one chain sends some token to another chain, the amounts of `Local Supply` of left and right chains are updated at consistency.
 
 
-[![OverlayTokenRopstenDemo](http://img.youtube.com/vi/P4w2f_tFXpE/0.jpg)](http://www.youtube.com/watch?v=P4w2f_tFXpE "OverlayTokenRopstenDemo")
+[![OverlayTokenRopstenDemo](http://img.youtube.com/vi/7gaCUYaVep4/0.jpg)](http://www.youtube.com/watch?v=7gaCUYaVep4 "OverlayTokenRopstenDemo")
 
 - The second demo is built on Ethereum (Ropsten) and substrate private chain.
 - Mint transaction on the Ethereum needs some transaction fee and high latency (30~ sec)
