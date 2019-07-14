@@ -24,12 +24,15 @@ that provide well-designed data structures and user-friendly functions for asset
 
 ## Demo movies
 
+### Substrate <-> Substrate
+
 [![OverlayTokenDemo](http://img.youtube.com/vi/P4w2f_tFXpE/0.jpg)](http://www.youtube.com/watch?v=P4w2f_tFXpE "OverlayTokenDemo")
 
 - The first demo is built on two different private chains made with substrate.
 - When the left chain mints or burns some token, the `Total Supply` of the right chain is synchronized.
 - When one chain sends some token to another chain, the amounts of `Local Supply` of left and right chains are updated at consistency.
 
+### Ethereum <-> Substrate
 
 [![OverlayTokenRopstenDemo](http://img.youtube.com/vi/7gaCUYaVep4/0.jpg)](http://www.youtube.com/watch?v=7gaCUYaVep4 "OverlayTokenRopstenDemo")
 
