@@ -61,7 +61,12 @@ that provide well-designed data structures and user-friendly functions for asset
 
 <p align="center"><img src="docs/BridgeArchitecture.svg" width="70%" alt="Demo 1 Architecture"></p>
 
-- You have to start 5 applications: 1) Parent Chain, 2) Child Chain, 3) Bridge, 4) Parent Web UI, 5) Child Web UI
+- You have to start 5 applications:
+  - 1) Parent Chain
+  - 2) Child Chain
+  - 3) Bridge
+  - 4) Parent Web UI
+  - 5) Child Web UI
 
 #### Start Parent Chain
 
@@ -117,7 +122,11 @@ $ PORT=8001 yarn run dev
 
 <p align="center"><img src="docs/BridgeArchitectureRopsten.svg" width="70%" alt="Demo 2 Architecture"></p>
 
-- You have to start 41) Substrate Chain, 2) Bridge, 4) Ethereum Web UI, 5) Substrate Web UI.
+- You have to start 4  applications:
+  - 1) Substrate Chain
+  - 2) Bridge
+  - 3) Ethereum Web UI
+  - 4) Substrate Web UI
 - Also overlay token is need to be deployed on the Ethereum testnet.
 
 
