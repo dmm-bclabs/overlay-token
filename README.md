@@ -71,7 +71,7 @@ that provide well-designed data structures and user-friendly functions for asset
 #### Start Parent Chain
 
 ```
-$ git clone https://github.com/dmm-bclabs/substrate-overlay-token.git
+$ git clone https://github.com/dmm-bclabs/substrate-overlay-token.git -b v0.1
 $ cd substrate-overlay-token
     
 $ ./scripts/build.sh
@@ -93,7 +93,7 @@ $ ./target/release/substrate-overlay-token --chain child --dave --validator --ba
 #### Start Bridge
 
 ```
-$ git clone https://github.com/dmm-bclabs/substrate-overlay-token-bridge.git
+$ git clone https://github.com/dmm-bclabs/substrate-overlay-token-bridge.git -b v0.1
 $ cd substrate-overlay-token-bridge
     
 $ yarn install
@@ -103,7 +103,7 @@ $ yarn run dev
 ### Start Parent Web UI
 
 ```
-$ git clone https://github.com/dmm-bclabs/substrate-overlay-token-ui.git
+$ git clone https://github.com/dmm-bclabs/substrate-overlay-token-ui.git -b v0.1
 $ cd substrate-overlay-token-ui
     
 $ yarn install
@@ -133,7 +133,7 @@ $ PORT=8001 yarn run dev
 #### Start Substrate Chain
 
 ```
-$ git clone https://github.com/dmm-bclabs/substrate-overlay-token.git
+$ git clone https://github.com/dmm-bclabs/substrate-overlay-token.git -b v0.1
 $ cd substrate-overlay-token
     
 $ ./scripts/build.sh
@@ -146,7 +146,7 @@ $ ./target/release/substrate-overlay-token --chain parent --charlie --validator 
 #### Start Bridge
 
 ```
-$ git clone https://github.com/dmm-bclabs/ethereum-overlay-token-bridge.git
+$ git clone https://github.com/dmm-bclabs/ethereum-overlay-token-bridge.git -b v0.1
 $ cd ethereum-overlay-token-bridge
     
 $ yarn install
@@ -164,7 +164,7 @@ $ node index.js
 #### Start Ethereum Web UI
 
 ```
-$ git clone https://github.com/dmm-bclabs/ethereum-overlay-token-ui.git
+$ git clone https://github.com/dmm-bclabs/ethereum-overlay-token-ui.git -b v0.1
 $ cd ethereum-overlay-token-ui
     
 $ yarn install
@@ -174,7 +174,7 @@ $ yarn start
 #### Start Substrate Web UI
 
 ```
-$ git clone https://github.com/dmm-bclabs/substrate-overlay-token-ui.git
+$ git clone https://github.com/dmm-bclabs/substrate-overlay-token-ui.git -b v0.1
 $ cd substrate-overlay-token-ui
     
 $ yarn install
